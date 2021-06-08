@@ -155,8 +155,8 @@ public class ValidatorsHandlersFactory {
         getClass().getClassLoader().getResourceAsStream("post_request_schema.json")) {
       jsonStr = CharStreams.toString(new InputStreamReader(inputStream, Charsets.UTF_8));
     } catch (IOException e) {
-      LOGGER.error(e);
-      return jsonStr;
+      LOGGER.error("Decode Exception : "+e);
+      throw new RuntimeException("Decode exception");
     }
     return jsonStr;
   }

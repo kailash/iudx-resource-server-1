@@ -155,7 +155,7 @@ public class Constants {
 
   // pagination
 
-  public static final int DEFAULT_SIZE_VALUE = 5000;
+  public static final int DEFAULT_SIZE_VALUE = 1000;
   public static final int DEFAULT_FROM_VALUE = 0;
   public static final String COUNT_MATCH_ALL_QUERY="{\"query\": { \"match_all\": {} }}";
 }
